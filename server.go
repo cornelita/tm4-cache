@@ -17,6 +17,8 @@ func main() {
 
 	r.GET("/read/:npm", readHandler)
 
+	r.GET("/read/:npm/:trxId", readHandler)
+
 	r.POST("/update", updateHandler)
 
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
